@@ -1,0 +1,15 @@
+[
+  {
+    "case": "rl-crc32c-empty-heartbeat-shape",
+    "operation": "rl_encode",
+    "input": {
+      "check_code": "C",
+      "sequence": 0,
+      "payload": "1c006018020000000100000000000000000000000000000000000000"
+    },
+    "expected": {
+      "accepted": true,
+      "wire": "28000000000000001c0060180200000001000000000000000000000000000000000000001d6958b7"
+    }
+  }
+]

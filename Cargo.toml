@@ -1,0 +1,23 @@
+[package]
+name = "rasta-rust"
+version = "0.1.0"
+description = "Deterministic, transport-independent core primitives for RaSTA"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/rasta-protocol/rasta-rust"
+rust-version = "1.83"
+readme = "README.md"
+keywords = ["rasta", "railway", "protocol", "transport", "no-std"]
+categories = ["network-programming", "embedded", "no-std"]
+exclude = [".cargo", ".github", "rust-toolchain.toml"]
+
+[features]
+default = ["std"]
+std = []
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+all = { level = "deny", priority = -1 }
+pedantic = { level = "deny", priority = -1 }

@@ -1,0 +1,5 @@
+[env]
+# Unoptimized test builds keep several engine-sized values in one stack frame,
+# more than the default 2 MiB test-thread stack holds. The deployment stack
+# budget is checked by the optimized small-stack test in tests/stack.rs.
+RUST_MIN_STACK = "8388608"
